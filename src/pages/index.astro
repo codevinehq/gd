@@ -1,5 +1,68 @@
 ---
+import clsx from "clsx";
 import FAQs from "../components/FAQs";
+
+const featuredTestimonial = {
+  body: "Farzad has been a superb addition to the team over the last few months. From a skills perspective he's been faultless and above expectation. In terms of behaviours the team have commented on more than one occasion about how supportive and collaborative he has been, We're looking forward to working with him again.",
+  author: {
+    name: "Gemma Handley",
+    company: "MediaCom North Group",
+  },
+};
+const testimonials = [
+  [
+    [
+      {
+        body: "Alex completed a contract for us and stood out not just technically but also with his ability to interact with the teams around him. He certainly brings the soft skills required to quickly identify problems and work with those around him to get the job done.",
+        author: {
+          name: "Michael Cullen",
+          company: "iVendi",
+        },
+      },
+      // More testimonials...
+    ],
+    [
+      {
+        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        author: {
+          name: "Lindsay Walton",
+          company: "lindsaywalton",
+        },
+      },
+      // More testimonials...
+    ],
+  ],
+  [
+    [
+      {
+        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        author: {
+          name: "Leonard Krasner",
+          company: "leonardkrasner",
+        },
+      },
+      // More testimonials...
+    ],
+    [
+      {
+        body: `When I worked with Alex, I found him to be an exceptionally
+            talented developer as well as a joy to work with. It was very
+            inspiring for me, early in my career, to learn from a developer who
+            was confident and efficient whether he was tackling complex, legacy
+            code or adapting to new and innovative technologies. He quickly
+            became known as the go-to guy for his broad-spanning insight and his
+            ability to solve massive problems under pressure. His contributions
+            to our team were pivotal and a main factor in our success.`,
+        author: {
+          name: "Juliette Curran",
+          company: "iVendi",
+        },
+      },
+
+      // More testimonials...
+    ],
+  ],
+];
 ---
 
 <html lang="en">
@@ -353,125 +416,65 @@ import FAQs from "../components/FAQs";
           </svg>
         </div>
         <div
-          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-slate-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"
+          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"
         >
           <figure
-            class="block rounded-2xl bg-white shadow-lg ring-1 ring-slate-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1"
+            class="block rounded-2xl bg-white shadow-lg ring-2 ring-slate-900 sm:col-span-2 xl:col-start-2 xl:row-end-1"
           >
             <blockquote
               class="p-6 text-slate-900 sm:p-12 sm:text-xl sm:font-semibold sm:leading-8 sm:tracking-tight"
             >
-              <p>
-                “Farzad has been a superb addition to the team over the last few
-                months. From a skills perspective he's been faultless and above
-                expectation. In terms of behaviours the team have commented on
-                more than one occasion about how supportive and collaborative he
-                has been, We're looking forward to working with him again.”
-              </p>
+              <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption
-              class="flex items-center gap-x-4 border-t border-slate-900/10 px-6 py-4"
+              class="flex items-center gap-x-4 border-t-2 border-slate-900 px-6 py-4"
             >
               <div class="flex-auto">
-                <div class="font-semibold">Gemma Handley</div>
-                <div class="text-slate-600">MediaCom North Group</div>
+                <div class="font-semibold">
+                  {featuredTestimonial.author.name}
+                </div>
+                <div class="text-gray-600">
+                  {featuredTestimonial.author.company}
+                </div>
               </div>
             </figcaption>
           </figure>
-          <div class="space-y-8 xl:contents xl:space-y-0">
-            <div class="space-y-8 xl:row-span-2">
-              <figure
-                class="rounded-2xl bg-white shadow-lg ring-1 ring-slate-900/5"
-              >
-                <blockquote class="p-6 text-slate-900">
-                  <p>
-                    “Laborum quis quam. Dolorum et ut quod quia. Voluptas
-                    numquam delectus nihil. Aut enim doloremque et ipsam.”
-                  </p>
-                </blockquote>
-                <figcaption
-                  class="flex items-center gap-x-4 border-t border-slate-900/10 px-6 py-4"
-                >
-                  <div>
-                    <div class="font-semibold">Leslie Alexander</div>
-                    <div class="text-slate-600">@lesliealexander</div>
+          {
+            testimonials.map((columnGroup, columnGroupIdx) => (
+              <div class="space-y-8 xl:contents xl:space-y-0">
+                {columnGroup.map((column, columnIdx) => (
+                  <div
+                    class={clsx(
+                      (columnGroupIdx === 0 && columnIdx === 0) ||
+                        (columnGroupIdx === testimonials.length - 1 &&
+                          columnIdx === columnGroup.length - 1)
+                        ? "xl:row-span-2"
+                        : "xl:row-start-1",
+                      "space-y-8",
+                    )}
+                  >
+                    {column.map((testimonial) => (
+                      <figure class="rounded-2xl bg-white  shadow-lg ring-2 ring-slate-900">
+                        <blockquote class="p-6 text-gray-900">
+                          <p>{`“${testimonial.body}”`}</p>
+                        </blockquote>
+                        <figcaption class="flex items-center gap-x-4 border-t-2 border-slate-900 px-6 py-4">
+                          <div>
+                            <div class="font-semibold leading-normal">
+                              {testimonial.author.name}
+                            </div>
+                            <div class="leading-normal text-gray-600">
+                              {testimonial.author.company}
+                            </div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    ))}
                   </div>
-                </figcaption>
-              </figure>
-
-              <!-- More testimonials... -->
-            </div>
-            <div class="space-y-8 xl:row-start-1">
-              <figure
-                class="rounded-2xl bg-white shadow-lg ring-1 ring-slate-900/5"
-              >
-                <blockquote class="p-6 text-slate-900">
-                  <p>
-                    “Aut reprehenderit voluptatem eum asperiores beatae id. Iure
-                    molestiae ipsam ut officia rem nulla blanditiis.”
-                  </p>
-                </blockquote>
-                <figcaption
-                  class="flex items-center gap-x-4 border-t border-slate-900/10 px-6 py-4"
-                >
-                  <div>
-                    <div class="font-semibold">Lindsay Walton</div>
-                    <div class="text-slate-600">@lindsaywalton</div>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <!-- More testimonials... -->
-            </div>
-          </div>
-          <div class="space-y-8 xl:contents xl:space-y-0">
-            <div class="space-y-8 xl:row-start-1">
-              <figure
-                class="rounded-2xl bg-white shadow-lg ring-1 ring-slate-900/5"
-              >
-                <blockquote class="p-6 text-slate-900">
-                  <p>
-                    “Voluptas quos itaque ipsam in voluptatem est. Iste eos
-                    blanditiis repudiandae. Earum deserunt enim molestiae ipsum
-                    perferendis recusandae saepe corrupti.”
-                  </p>
-                </blockquote>
-                <figcaption
-                  class="flex items-center gap-x-4 border-t border-slate-900/10 px-6 py-4"
-                >
-                  <div>
-                    <div class="font-semibold">Tom Cook</div>
-                    <div class="text-slate-600">@tomcook</div>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <!-- More testimonials... -->
-            </div>
-            <div class="space-y-8 xl:row-span-2">
-              <figure
-                class="rounded-2xl bg-white shadow-lg ring-1 ring-slate-900/5"
-              >
-                <blockquote class="p-6 text-slate-900">
-                  <p>
-                    “Molestias ea earum quos nostrum doloremque sed. Quaerat
-                    quasi aut velit incidunt excepturi rerum voluptatem minus
-                    harum.”
-                  </p>
-                </blockquote>
-                <figcaption
-                  class="flex items-center gap-x-4 border-t border-slate-900/10 px-6 py-4"
-                >
-                  <div>
-                    <div class="font-semibold">Leonard Krasner</div>
-                    <div class="text-slate-600">@leonardkrasner</div>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <!-- More testimonials... -->
-            </div>
-          </div>
+                ))}
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
