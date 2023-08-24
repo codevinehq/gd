@@ -3,7 +3,7 @@ import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
   {
-    question: "How do I request development",
+    question: "How do I request development?",
     answer:
       "We offer a lot of flexibility. Some common ways clients request development work is directly via Trello, or with links to the clients existing ticking management system.",
   },
