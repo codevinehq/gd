@@ -12,7 +12,7 @@ const faqs = [
     answer:"You can request as much work as you like but there can only be one task currently in progress."
   },
   {
-    question: "How fast will the requets be completed?",
+    question: "How fast will the request be completed?",
     answer:"On average, most requests are completed within 24 hours. However, more complex requests can take longer. Time frames will be discussed during task allocation. There is always someone available to work on your request, no holdiays, no sick days, no problems."
   },
   {
