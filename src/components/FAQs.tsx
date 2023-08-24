@@ -11,7 +11,15 @@ const faqs = [
     question: "Is there a limit to the work I can request?",
     answer:"You can request as much work as you like but there can only be one task currently in progress."
   },
-
+  {
+    question: "How fast will the requets be completed?",
+    answer:"On average, most requests are completed within 24 hours. However, more complex requests can take longer. Time frames will be discussed during task allocation. There is always someone available to work on your request, no holdiays, no sick days, no problems."
+  },
+  {
+    question: "Why wouldn't I just hire a full-time developer?",
+    answer:`The annual cost of a full-time senior-level developer now exceeds £65,000, plus benefits. Aside from that, you may not always have enough work to keep them busy at all times, so you're stuck paying for time you are not able to utilize. 
+With our monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying when you have work available.`
+  },
   // More questions...
 ];
 
