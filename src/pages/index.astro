@@ -1,4 +1,5 @@
 ---
+import "../index.css";
 import clsx from "clsx";
 import FAQs from "../components/FAQs";
 
@@ -109,12 +110,6 @@ const testimonials = [
       content="Scale your business with GhostDevs - Frontend Development as a subscription. Get the expertise of three senior frontend developers for the price of one and save up to £180,000 per year."
     />
     <meta property="twitter:image" content="/og.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="font-sans">
     <section
@@ -431,9 +426,7 @@ const testimonials = [
           <figure
             class="block rounded-2xl bg-white shadow-lg ring-2 ring-slate-900 sm:col-span-2 xl:col-start-2 xl:row-end-1"
           >
-            <blockquote
-              class="p-6 text-slate-900 sm:p-12 sm:text-xl sm:font-semibold sm:leading-8 sm:tracking-tight"
-            >
+            <blockquote class="p-6 text-slate-900">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption
