@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "How fast will the request be completed?",
     answer:
-      "On average, most requests are completed within 24 hours. However, more complex requests can take longer. Time frames will be discussed during task allocation. There is always someone available to work on your request, no holdiays, no sick days, no problems.",
+      "On average, most requests are completed within 1-3 days. However, more complex requests can take longer. Time frames will be discussed during task allocation. There is always someone available to work on your request, no holdiays, no sick days, no problems.",
   },
   {
     question: "Why wouldn't I just hire a full-time developer?",
