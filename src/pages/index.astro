@@ -4,51 +4,48 @@ import clsx from "clsx";
 import FAQs from "../components/FAQs";
 import Pricing from "../components/Pricing";
 
-const featuredTestimonial = {
-  body: "Farzad has been a superb addition to the team over the last few months. From a skills perspective he's been faultless and above expectation. In terms of behaviours the team have commented on more than one occasion about how supportive and collaborative he has been, We're looking forward to working with him again.",
-  author: {
-    name: "Gemma Handley",
-    company: "MediaCom North Group",
-  },
-};
 const testimonials = [
-  [
-    [
-      {
-        body: "I've had the pleasure of working with Alex over three different stints and I can wholeheartedly recommend him as a front end developer of the highest calibre. He's shown himself to be a difference maker able to take on complex problems on both brownfield and greenfield projects and deliver software that customer love and is easily maintained. Any team or organisation would be fortunate to have Alex onboard.",
-        author: {
-          name: "Arwel Griffith",
-          company: "BrightHR",
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: "Alex completed a contract for us and stood out not just technically but also with his ability to interact with the teams around him. He certainly brings the soft skills required to quickly identify problems and work with those around him to get the job done.",
-        author: {
-          name: "Michael Cullen",
-          company: "iVendi",
-        },
-      },
+  {
+    body: "Farzad has been a superb addition to the team over the last few months. From a skills perspective he's been faultless and above expectation. In terms of behaviours the team have commented on more than one occasion about how supportive and collaborative he has been, We're looking forward to working with him again.",
+    author: {
+      name: "Gemma Handley",
+      company: "MediaCom North Group",
+    },
+  },
+  {
+    body: "I've had the pleasure of working with Alex over three different stints and I can wholeheartedly recommend him as a front end developer of the highest calibre. He's shown himself to be a difference maker able to take on complex problems on both brownfield and greenfield projects and deliver software that customer love and is easily maintained. Any team or organisation would be fortunate to have Alex onboard.",
+    author: {
+      name: "Arwel Griffith",
+      company: "BrightHR",
+    },
+  },
+  {
+    body: "Alex completed a contract for us and stood out not just technically but also with his ability to interact with the teams around him. He certainly brings the soft skills required to quickly identify problems and work with those around him to get the job done.",
+    author: {
+      name: "Michael Cullen",
+      company: "iVendi",
+    },
+  },
 
-      // More testimonials...
-    ],
-  ],
-  [
-    [
-      {
-        body: "We have been working with Farzad intermittently over the last two years and to say we wouldn`t be where we are without him is an understatement. He has offered us his professional opinion/direction at every step which has proven to be invaluable. A professional to work from the outset with whom we hope to have a long working relationship with in the future.",
-        author: {
-          name: "Conor Mahon",
-          company: "Codaci",
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: `When I worked with Alex, I found him to be an exceptionally
+  {
+    body: "We have been working with Farzad intermittently over the last two years and to say we wouldn`t be where we are without him is an understatement. He has offered us his professional opinion/direction at every step which has proven to be invaluable. A professional to work from the outset with whom we hope to have a long working relationship with in the future.",
+    author: {
+      name: "Conor Mahon",
+      company: "Codaci",
+    },
+  },
+
+  {
+    body: "Alex is a versatile developer. He quickly grasps how applications work and will work to improve applications as he makes changes. He can communicate with technical and non-technical staff at all levels. He is also great at coaching more junior team members. Alex is always looking to improve the way things work be that technically or ways of working. He’s an asset to any team and would wholeheartedly recommend him.",
+    author: {
+      name: "Faiza Mohammad",
+      company: "iVendi",
+    },
+  },
+  // More testimonials...
+
+  {
+    body: `When I worked with Alex, I found him to be an exceptionally
             talented developer as well as a joy to work with. It was very
             inspiring for me, early in my career, to learn from a developer who
             was confident and efficient whether he was tackling complex, legacy
@@ -56,15 +53,13 @@ const testimonials = [
             became known as the go-to guy for his broad-spanning insight and his
             ability to solve massive problems under pressure. His contributions
             to our team were pivotal and a main factor in our success.`,
-        author: {
-          name: "Juliette Curran",
-          company: "iVendi",
-        },
-      },
+    author: {
+      name: "Juliette Curran",
+      company: "iVendi",
+    },
+  },
 
-      // More testimonials...
-    ],
-  ],
+  // More testimonials...
 ];
 ---
 
@@ -228,25 +223,19 @@ const testimonials = [
         <h2
           class="mx-auto max-w-xl text-center text-2xl font-bold leading-normal tracking-wide"
         >
-          Frontend Development so easy, it's scary.
+          Frontend Development as a Subscription
         </h2>
 
-        <div class="mx-auto max-w-screen-md space-y-4">
+        <div class="mx-auto max-w-screen-sm space-y-4 text-center">
           <p class="text-lg">
-            Use frontend development as a subscription to scale your business.
-            We replace unreliable freelancers and expensive agencies for one
-            flat monthly fee. We specialise in speed of delivery and excel when
-            working with our clients in an async nature.
+            Swap inconsistent freelancers and costly agencies for a fixed
+            monthly fee. We deliver quickly and you only pay for what you need.
           </p>
           <p class="text-lg">
             Get the expertise of <strong
               class="underline decoration-slate-800 underline-offset-4"
               >3 senior developers from just £2,495/month</strong
-            >. With the annual cost of hiring a senior developer now exceeding
-            £65,000, not including benefits! You could <strong
-              class="underline decoration-slate-800 underline-offset-4"
-              >save over £180,000</strong
-            > per year on salaries alone.
+            > and save over £200K per year on salaries alone.
           </p>
         </div>
 
@@ -422,61 +411,25 @@ const testimonials = [
           </svg>
         </div>
         <div
-          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"
+          class="-mx-6 mt-16 flex w-screen snap-x snap-mandatory flex-row gap-8 overflow-x-auto overflow-y-visible scroll-smooth p-1 px-6 text-sm leading-6 text-gray-900 sm:mt-20 sm:block sm:w-full sm:columns-2 xl:columns-3"
         >
-          <figure
-            class="block rounded-2xl bg-white shadow-lg ring-2 ring-slate-900 sm:col-span-2 xl:col-start-2 xl:row-end-1"
-          >
-            <blockquote class="p-6 text-slate-900">
-              <p>{`“${featuredTestimonial.body}”`}</p>
-            </blockquote>
-            <figcaption
-              class="flex items-center gap-x-4 border-t-2 border-slate-900 px-6 py-4"
-            >
-              <div class="flex-auto">
-                <div class="font-semibold">
-                  {featuredTestimonial.author.name}
-                </div>
-                <div class="text-gray-600">
-                  {featuredTestimonial.author.company}
-                </div>
-              </div>
-            </figcaption>
-          </figure>
           {
-            testimonials.map((columnGroup, columnGroupIdx) => (
-              <div class="space-y-8 xl:contents xl:space-y-0">
-                {columnGroup.map((column, columnIdx) => (
-                  <div
-                    class={clsx(
-                      (columnGroupIdx === 0 && columnIdx === 0) ||
-                        (columnGroupIdx === testimonials.length - 1 &&
-                          columnIdx === columnGroup.length - 1)
-                        ? "xl:row-span-2"
-                        : "xl:row-start-1",
-                      "space-y-8",
-                    )}
-                  >
-                    {column.map((testimonial) => (
-                      <figure class="rounded-2xl bg-white  shadow-lg ring-2 ring-slate-900">
-                        <blockquote class="p-6 text-gray-900">
-                          <p>{`“${testimonial.body}”`}</p>
-                        </blockquote>
-                        <figcaption class="flex items-center gap-x-4 border-t-2 border-slate-900 px-6 py-4">
-                          <div>
-                            <div class="font-semibold leading-normal">
-                              {testimonial.author.name}
-                            </div>
-                            <div class="leading-normal text-gray-600">
-                              {testimonial.author.company}
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
+            testimonials.map((testimonial) => (
+              <figure class="flex w-full flex-shrink-[.05] snap-center break-inside-avoid-column flex-col rounded-2xl bg-white shadow-lg ring-2 ring-slate-900 sm:mb-8">
+                <blockquote class="p-6 text-gray-900">
+                  <p>{`“${testimonial.body}”`}</p>
+                </blockquote>
+                <figcaption class="mt-auto flex items-center gap-x-4 border-t-2 border-slate-900 px-6 py-4">
+                  <div>
+                    <div class="font-semibold leading-normal">
+                      {testimonial.author.name}
+                    </div>
+                    <div class="leading-normal text-gray-600">
+                      {testimonial.author.company}
+                    </div>
                   </div>
-                ))}
-              </div>
+                </figcaption>
+              </figure>
             ))
           }
         </div>
@@ -592,8 +545,8 @@ const testimonials = [
               >
                 <p class="flex-auto">
                   If you run out of tasks, you can pause your subscription. For
-                  example if you use 20 days of work in a month, you can pause
-                  your subscription and save the remaining 10 days for the next
+                  example if you use 10 days of work in a month, you can pause
+                  your subscription and save the remaining 12 days for the next
                   month.
                 </p>
               </dd>
@@ -951,6 +904,15 @@ const testimonials = [
             </div>
           </dl>
         </div>
+        <p
+          class="mx-auto mt-16 max-w-lg rounded-xl bg-slate-50/25 p-6 text-center text-xl leading-relaxed ring-2 ring-slate-900"
+        >
+          <strong>Can't find what you're looking for?</strong><br />Our <span
+            class="underline underline-offset-2">Create</span
+          >
+           package gives you a dedicated full-time developer and is suitable for
+          projects of all sizes.
+        </p>
       </div>
     </div>
     <div class="bg-white py-24 sm:py-32">
@@ -973,7 +935,7 @@ const testimonials = [
           <li class="flex flex-col items-center gap-10 xl:flex-row">
             <img
               class="aspect-[4/5] w-52 flex-none rounded-2xl border-2 border-slate-900 object-cover grayscale"
-              src="/farz.jpg"
+              src="/farz-blur.jpg"
               alt=""
             />
             <div class="flex-auto">
@@ -1092,7 +1054,7 @@ const testimonials = [
           <li class="flex flex-col items-center gap-10 xl:flex-row-reverse">
             <img
               class="aspect-[4/5] w-52 flex-none rounded-2xl border-2 border-slate-900 object-cover grayscale"
-              src="/matt.jpg"
+              src="/matt-blur.jpg"
               alt=""
             />
             <div class="flex-auto">
@@ -1197,7 +1159,7 @@ const testimonials = [
           <li class="flex flex-col items-center gap-10 xl:flex-row">
             <img
               class="aspect-[4/5] w-52 flex-none rounded-2xl border-2 border-slate-900 object-cover grayscale"
-              src="/alex-2.jpg"
+              src="/alex-blur.jpg"
               alt=""
             />
             <div class="flex-auto">
