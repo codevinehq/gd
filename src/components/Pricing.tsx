@@ -1,7 +1,7 @@
 const PricingFeatures = ({ features }: { features: string[] }) => (
   <ul role="list" className="mt-8 space-y-3 text-sm leading-6  xl:mt-10">
     {features.map((feature) => (
-      <li className="flex gap-x-3">
+      <li className="flex gap-x-3" key={feature}>
         <svg
           className="h-6 w-5 flex-none text-amber-500"
           viewBox="0 0 20 20"
@@ -9,9 +9,9 @@ const PricingFeatures = ({ features }: { features: string[] }) => (
           aria-hidden="true"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           />
         </svg>
         {feature}
@@ -22,7 +22,7 @@ const PricingFeatures = ({ features }: { features: string[] }) => (
 
 const Pricing = () => {
   return (
-    <div className="bg-amber-400 py-24 sm:py-32" id="pricing">
+    <div className="bg-amber-400 py-12 sm:py-32" id="pricing">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -118,7 +118,7 @@ const Pricing = () => {
             </div>
             <p className="mt-4 text-sm leading-6 ">
               Get a dedicated developer for your business. This plan is designed
-              for large projects with continuous development or entire projects.
+              for large projects with continuous development.
             </p>
             <p className="mt-6 flex items-baseline gap-x-1">
               <span className="text-4xl font-bold tracking-tight text-slate-900">
