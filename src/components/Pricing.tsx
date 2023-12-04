@@ -42,7 +42,7 @@ const Pricing = () => {
             </div>
             <p className="mt-4 text-sm leading-6 ">
               Access to a team of expierenced developers to support your
-              business. This plan is designed for small businesses with that
+              business. This plan is designed for small businesses that
               need a little extra help.
             </p>
             <p className="mt-6 flex items-baseline gap-x-1">
@@ -60,7 +60,7 @@ const Pricing = () => {
             </a>
             <PricingFeatures
               features={[
-                "Minimum 6 days of work per month",
+                "Minimum 5 days of work per month",
                 "One request at a time",
                 "Average 2 days per request",
                 "Work on your tasks every day",
@@ -99,7 +99,7 @@ const Pricing = () => {
             </a>
             <PricingFeatures
               features={[
-                "Minimum 12 days of work per month",
+                "Minimum 10 days of work per month",
                 "One request at a time",
                 "Average 2 days per request",
                 "Work on your tasks every day",
