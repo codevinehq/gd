@@ -41,7 +41,7 @@ const Pricing = () => {
               </h3>
             </div>
             <p className="mt-4 text-sm leading-6 ">
-              Access to a team of expierenced developers to support your
+              Access to a team of experienced developers to support your
               business. This plan is designed for small businesses that
               need a little extra help.
             </p>
