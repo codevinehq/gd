@@ -24,7 +24,7 @@ With our monthly plan, you can pause and resume your subscription as often as yo
   },
   {
     question: "How many days work is included in the monthly plan?",
-    answer: `The monthly plan includes 22 days of development work per month. Unused days do not roll over to the next month unless you pause your subscription.`,
+    answer: `The monthly plan up to 20 days of development work per month. Unused days do not roll over to the next month unless you pause your subscription.`,
   },
   // More questions...
 ];
